@@ -43,7 +43,7 @@ class street_light():
         r=np.random.normal()
         self.voltage = self.mean_voltage + r
         
-        r = r*np.random.normal(scale=self.current_usage/100)
+        r = r*np.random.normal(scale=self.current_usage/99)
         self.current_usage = self.mean_current + r
 
         self.power_usage = self.voltage * self.current_usage
